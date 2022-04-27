@@ -42,7 +42,7 @@ d3 = get_education_data_summary(
 plot = ggplot()+
   geom_point(data = d3, mapping = aes(x = year, y = number_applied) , color = "red")
 
-# The hard way
+# The hard (but in my opinion better) way
 
 d4 = get_education_data(level = "college-university",
                         source = "ipeds",
